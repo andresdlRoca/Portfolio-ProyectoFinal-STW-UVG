@@ -1,0 +1,37 @@
+.windowContainer {
+  border: solid 3px grey;
+  width: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 500px;
+  position: relative;
+  overflow: auto;
+  border-top: 10px solid grey;
+  margin-top: 1%;
+  opacity: 1;
+}
+
+.windowContainer .windowNavBar {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  top: 0px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: #892f89;
+  opacity: 1;
+}
+
+.windowContainer .windowContent {
+  position: relative;
+  display: block;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1;
+}
+/*# sourceMappingURL=Window.css.map */

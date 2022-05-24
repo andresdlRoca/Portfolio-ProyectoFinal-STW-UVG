@@ -42,12 +42,11 @@
 .navbar-container .iconPlace {
   position: relative;
   display: inline-block;
-  background-color: red;
   width: 90%;
 }
 
 .navbar-container .hourDisplay {
-  background-color: aqua;
+  color: #e400e4;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
