@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
+  overflow: hidden;
   /*animation: popin 1s linear;
     animation-fill-mode: forwards;
     animation-delay: 5s;*/

@@ -1,16 +1,17 @@
 .windowContainer {
     border: solid 3px rgb(191, 35, 35);
+    position: absolute;
     width: fit-content;
     max-width: 700px;
     height: fit-content;
     max-height: 500px;
-    position: relative;
     overflow: auto;
     border-top: 5px solid rgb(191, 35, 35);
     margin-top: 1%;
     opacity: 1;
     background-color: rgb(191, 35, 35);
     animation: textShadow 15s infinite;
+    z-index: 4;
     /*.windowNavBar {
         position: sticky;
         display: block;
@@ -23,7 +24,6 @@
     }*/
     .windowContent {
         position: relative;
-        display: block;
         right: 0;
         top: 100%;
         width: 100%;
@@ -31,6 +31,7 @@
         background-color: white;
         color: black;
         opacity: 1;
+        margin-top: 2%;
     }
 
     .lofi {
@@ -47,6 +48,19 @@
 
     font-family: "VCR OSD Mono";
     color: white;
+
+    button {
+        width: 10%;
+        height: 5%;
+        min-width: 60px;
+        min-height: 20px;
+        position: absolute;
+        right: 0;
+        font-family: "VCR OSD Mono";
+        background-color: purple;
+        color: white;
+        animation: textShadow 15s infinite;
+    }
 }
 
 .nonvisible {

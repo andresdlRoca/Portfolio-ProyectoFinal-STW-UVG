@@ -1,5 +1,6 @@
 .windowContainer {
   border: solid 3px #bf2323;
+  position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -8,7 +9,6 @@
   height: -moz-fit-content;
   height: fit-content;
   max-height: 500px;
-  position: relative;
   overflow: auto;
   border-top: 5px solid #bf2323;
   margin-top: 1%;
@@ -16,6 +16,7 @@
   background-color: #bf2323;
   -webkit-animation: textShadow 15s infinite;
           animation: textShadow 15s infinite;
+  z-index: 4;
   /*.windowNavBar {
         position: sticky;
         display: block;
@@ -32,7 +33,6 @@
 
 .windowContainer .windowContent {
   position: relative;
-  display: block;
   right: 0;
   top: 100%;
   width: 100%;
@@ -40,6 +40,7 @@
   background-color: white;
   color: black;
   opacity: 1;
+  margin-top: 2%;
 }
 
 .windowContainer .lofi {
@@ -52,6 +53,20 @@
 
 .windowContainer .mario {
   background-color: transparent;
+}
+
+.windowContainer button {
+  width: 10%;
+  height: 5%;
+  min-width: 60px;
+  min-height: 20px;
+  position: absolute;
+  right: 0;
+  font-family: "VCR OSD Mono";
+  background-color: purple;
+  color: white;
+  -webkit-animation: textShadow 15s infinite;
+          animation: textShadow 15s infinite;
 }
 
 .nonvisible {

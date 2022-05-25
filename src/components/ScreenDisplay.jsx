@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Draggable from 'react-draggable';
 import "../styles/ScreenDisplay.css";
 import Icon from "./icon";
 import pcIcon from "../assets/pcIcon.png";
@@ -14,24 +15,29 @@ import Window from "./Window";
 
 export default function ScreenDisplay() {
 
-  const handleWindow = (name) => {
-    console.log("Create " + name +" window");
+  const [activeWindows, setActiveWindows] = useState([]);
+
+  const handleWindow = (name, windowName) => {
+    setActiveWindows(activeWindows => [...activeWindows, <Window name={name} windowName={windowName}/>]);
   }
 
   return (
         <div className="Display-container">
             <div className="iconrow">
-              <div className="clickableDiv" onClick={() => handleWindow("pcIcon")}><Icon iconIMG={ pcIcon } title="Andres (C:)"/></div>
+              <div className="clickableDiv" onClick={() => handleWindow("pcIcon", "Andres (C:)")}><Icon iconIMG={ pcIcon } title="Andres (C:)"/></div>
               <a href="https://github.com/andresdlRoca"><Icon iconIMG={ githubIcon } title="Github"/></a>
-              <div className="clickableDiv" onClick={() => handleWindow("Projects")}><Icon iconIMG={ folderIcon } title="Projects"/></div>
-              <div className="clickableDiv" onClick={() => handleWindow("Lofi")}><Icon iconIMG={ cdIcon } title="Lofi Beats to study"/></div>
-              <div className="clickableDiv" onClick={() => handleWindow("wallpaper")}><Icon iconIMG={ settingIcon } title="Wallpaper"/></div>
-              <div className="clickableDiv" onClick={() => handleWindow("smt")}><Icon iconIMG={ smtIcon } title="Shin Megami Tensei I"/></div>
-              <div className="clickableDiv" onClick={() => handleWindow("mario")}><Icon iconIMG={ marioIcon } title="Super Mario Bros"/></div>
+              <div className="clickableDiv" onClick={() => handleWindow("Projects", "Projects")}><Icon iconIMG={ folderIcon } title="Projects"/></div>
+              <div className="clickableDiv" onClick={() => handleWindow("Lofi", "Lofi Beats")}><Icon iconIMG={ cdIcon } title="Lofi Beats to study"/></div>
+              <div className="clickableDiv" onClick={() => handleWindow("smt", "Shin Megami Tensei I")}><Icon iconIMG={ smtIcon } title="Shin Megami Tensei I"/></div>
+              <div className="clickableDiv" onClick={() => handleWindow("mario", "Mario Bros")}><Icon iconIMG={ marioIcon } title="Super Mario Bros"/></div>
               <a href="http://stw-uvg-22.site:4025"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
               <a href="http://stw-uvg-22.site:3521"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
+
             </div>
-            <Window name="mario" windowName="Mario Bros" />
+            {activeWindows?.map((item, i) => (
+              <div key={i}>{item}</div>
+            ))}
+ 
         </div>
 
   );
