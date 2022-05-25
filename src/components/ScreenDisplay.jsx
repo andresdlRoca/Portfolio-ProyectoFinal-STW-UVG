@@ -31,7 +31,9 @@ export default function ScreenDisplay() {
               <a href="http://stw-uvg-22.site:4025"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
               <a href="http://stw-uvg-22.site:3521"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
             </div>
+            <Window name="mario" windowName="Mario Bros" />
         </div>
 
   );
 }
+// <Window name="Lofi" windowName="Lofi Beats to Study"/>

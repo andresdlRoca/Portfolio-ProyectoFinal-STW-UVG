@@ -1,27 +1,33 @@
 .windowContainer {
-  border: solid 3px grey;
-  width: 700px;
+  border: solid 3px #bf2323;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 700px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   max-height: 500px;
   position: relative;
   overflow: auto;
-  border-top: 10px solid grey;
+  border-top: 5px solid #bf2323;
   margin-top: 1%;
   opacity: 1;
-}
-
-.windowContainer .windowNavBar {
-  position: -webkit-sticky;
-  position: sticky;
-  display: block;
-  top: 0px;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  background-color: #892f89;
-  opacity: 1;
+  background-color: #bf2323;
+  -webkit-animation: textShadow 15s infinite;
+          animation: textShadow 15s infinite;
+  /*.windowNavBar {
+        position: sticky;
+        display: block;
+        top: 0px;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background-color: rgb(137, 47, 137);
+        opacity: 1;
+    }*/
+  font-family: "VCR OSD Mono";
+  color: white;
 }
 
 .windowContainer .windowContent {
@@ -32,6 +38,27 @@
   width: 100%;
   height: 100%;
   background-color: white;
+  color: black;
   opacity: 1;
+}
+
+.windowContainer .lofi {
+  background-color: transparent;
+}
+
+.windowContainer .smt {
+  background-color: transparent;
+}
+
+.windowContainer .mario {
+  background-color: transparent;
+}
+
+.nonvisible {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 /*# sourceMappingURL=Window.css.map */

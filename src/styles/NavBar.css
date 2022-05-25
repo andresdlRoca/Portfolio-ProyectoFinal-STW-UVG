@@ -53,6 +53,8 @@
   display: flex;
   width: 5%;
   font-size: 1vw;
+  -webkit-animation: textShadow 15s infinite;
+          animation: textShadow 15s infinite;
 }
 
 .navbar-container .hourDisplay p {
