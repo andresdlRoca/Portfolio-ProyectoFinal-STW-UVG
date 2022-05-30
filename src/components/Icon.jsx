@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
-import "../styles/Icon.css";
+import React from "react"
+import "../styles/Icon.css"
+import PropTypes from "prop-types"
 
 export default function Icon({ iconIMG, title }) {
 
-  return (
-    <div className="iconContainer">
-        <img src={iconIMG} alt={title} className="iconImage" />
-        <p className="iconName">{title}</p>
-    </div>
-  );
+	Icon.propTypes = {
+		iconIMG: PropTypes.string.isRequired,
+		title: PropTypes.string.isRequired,
+	}
+
+	return (
+		<div className="iconContainer">
+			<img src={iconIMG} alt={title} className="iconImage" />
+			<p className="iconName">{title}</p>
+		</div>
+	)
 }
