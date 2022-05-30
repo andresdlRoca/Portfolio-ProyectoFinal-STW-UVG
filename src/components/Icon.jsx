@@ -10,7 +10,7 @@ export default function Icon({ iconIMG, title }) {
 	}
 
 	return (
-		<div className="iconContainer">
+		<div data-testid="Icon-test" className="iconContainer">
 			<img src={iconIMG} alt={title} className="iconImage" />
 			<p className="iconName">{title}</p>
 		</div>

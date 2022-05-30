@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar"
 
 export default function PageWrap() {
 	return (
-		<div className="page-wrap" style={{ backgroundImage: `url(${backgroundIMG})`}}>
+		<div data-testid="pagewrap-test" className="page-wrap" style={{ backgroundImage: `url(${backgroundIMG})`}}>
 			<ScreenDisplay />
 			<NavBar />
 		</div>
