@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Draggable from 'react-draggable';
 import "../styles/ScreenDisplay.css";
 import Icon from "./icon";
@@ -17,6 +17,7 @@ export default function ScreenDisplay() {
 
   const [activeWindows, setActiveWindows] = useState([]);
 
+
   const handleWindow = (name, windowName) => {
     setActiveWindows(activeWindows => [...activeWindows, <Window name={name} windowName={windowName}/>]);
   }
@@ -25,13 +26,13 @@ export default function ScreenDisplay() {
         <div className="Display-container">
             <div className="iconrow">
               <div className="clickableDiv" onClick={() => handleWindow("pcIcon", "Andres (C:)")}><Icon iconIMG={ pcIcon } title="Andres (C:)"/></div>
-              <a href="https://github.com/andresdlRoca"><Icon iconIMG={ githubIcon } title="Github"/></a>
+              <a href="https://github.com/andresdlRoca" target="_blank"><Icon iconIMG={ githubIcon } title="Github"/></a>
               <div className="clickableDiv" onClick={() => handleWindow("Projects", "Projects")}><Icon iconIMG={ folderIcon } title="Projects"/></div>
               <div className="clickableDiv" onClick={() => handleWindow("Lofi", "Lofi Beats")}><Icon iconIMG={ cdIcon } title="Lofi Beats to study"/></div>
               <div className="clickableDiv" onClick={() => handleWindow("smt", "Shin Megami Tensei I")}><Icon iconIMG={ smtIcon } title="Shin Megami Tensei I"/></div>
               <div className="clickableDiv" onClick={() => handleWindow("mario", "Mario Bros")}><Icon iconIMG={ marioIcon } title="Super Mario Bros"/></div>
-              <a href="http://stw-uvg-22.site:4025"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
-              <a href="http://stw-uvg-22.site:3521"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
+              <a href="http://stw-uvg-22.site:4025" target="_blank"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
+              <a href="http://stw-uvg-22.site:3521" target="_blank"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
 
             </div>
             {activeWindows?.map((item, i) => (

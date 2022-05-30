@@ -3,7 +3,8 @@ import "../styles/Window.css";
 import Spotify from "react-spotify-embed";
 import YouTube from "react-youtube";
 import Draggable from 'react-draggable';
-
+import Projects from "./Projects";
+import Aboutme from "./Aboutme";
 
 export default function Window({ name, windowName }) {
     
@@ -19,10 +20,10 @@ export default function Window({ name, windowName }) {
             {windowName}
             <button onClick={handleClose}>Close</button>
             <div className={name === "pcIcon" ? "windowContent about visible" : "nonvisible"}>
-                About Me                    
+                <Aboutme/>                 
             </div>
             <div className={name === "Projects" ? "windowContent projects visible" : "nonvisible"}>
-                Projects
+                <Projects/>
             </div>
             <div className={name === "Lofi" ? "windowContent lofi visible" : "nonvisible"}>
                 <Spotify link={"https://open.spotify.com/playlist/60fjgeg72OSnHnVa4im6oq?si=78aea5b1b12248bb"}/>

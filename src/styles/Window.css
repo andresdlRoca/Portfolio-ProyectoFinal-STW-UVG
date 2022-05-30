@@ -4,7 +4,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 700px;
+  max-width: 750px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -14,8 +14,7 @@
   margin-top: 1%;
   opacity: 1;
   background-color: #bf2323;
-  -webkit-animation: textShadow 15s infinite;
-          animation: textShadow 15s infinite;
+  left: 0;
   z-index: 4;
   /*.windowNavBar {
         position: sticky;
@@ -40,7 +39,7 @@
   background-color: white;
   color: black;
   opacity: 1;
-  margin-top: 2%;
+  margin-top: 5px;
 }
 
 .windowContainer .lofi {

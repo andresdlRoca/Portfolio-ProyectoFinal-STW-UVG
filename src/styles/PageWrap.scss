@@ -9,12 +9,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 1; //0 for animation
+    opacity: 0; //0 for animation
     overflow: hidden;
 
-    /*animation: popin 1s linear;
+    animation: popin 1s linear;
     animation-fill-mode: forwards;
-    animation-delay: 5s;*/
+    animation-delay: 5s;
 }
 
 .page-wrap::before {

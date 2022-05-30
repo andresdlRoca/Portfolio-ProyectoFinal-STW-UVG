@@ -6,6 +6,7 @@ import IntroPage from "./pages/IntroPage";
 
 ReactDOM.render(
     <>
+        <IntroPage />
         <PageWrap />
     </>
     
