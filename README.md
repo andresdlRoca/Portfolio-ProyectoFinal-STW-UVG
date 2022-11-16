@@ -1,1 +1,6 @@
-# Portfolio-ProyectoFinal-STW-UVG
+# Portfolio-WebdevFinalProject-UVG
+
+In command line:
+```
+npm run start
+```
