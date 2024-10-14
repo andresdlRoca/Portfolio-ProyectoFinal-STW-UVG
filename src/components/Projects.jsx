@@ -20,7 +20,7 @@ export default function Projects() {
 				<img src={ysbrydimg} alt="ScreenShot from project page" />
 				<a data-testid="GithubP1-test" target="_blank" href="https://github.com/andresdlRoca/Proyecto1-STW-UVG" rel="noreferrer">Github Repo</a>
 				<br/>
-				<a target="_blank" href="http://stw-uvg-22.site:4010" rel="noreferrer">Working page</a>
+				<a target="_blank" href="https://github.com/andresdlRoca/YSBRYD-GamePublisher-PageMockup" rel="noreferrer">Working page</a>
 			</div>
 			<div className="uvgentepage">
 				<br/>

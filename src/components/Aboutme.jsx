@@ -5,7 +5,7 @@ import meimg from "../assets/me.png"
 export default function Aboutme() {
 
 	return (
-		<div className="aboutme-container">
+		<div data-testid="AboutMeWindow-test" className="aboutme-container">
             About me
 			<br/>
 			<img src={meimg} alt="Me" className="meimg" />

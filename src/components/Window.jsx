@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "../styles/Window.css"
-import Spotify from "react-spotify-embed"
+import { Spotify } from "react-spotify-embed"
 import YouTube from "react-youtube"
 import Draggable from "react-draggable"
 import Projects from "./Projects"

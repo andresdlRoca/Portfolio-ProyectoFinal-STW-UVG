@@ -30,8 +30,8 @@ export default function ScreenDisplay() {
 				<div className="clickableDiv" onClick={() => handleWindow("Lofi", "Lofi Beats")}><Icon iconIMG={ cdIcon } title="Lofi Beats to study"/></div>
 				<div className="clickableDiv" onClick={() => handleWindow("smt", "Shin Megami Tensei I")}><Icon iconIMG={ smtIcon } title="Shin Megami Tensei I"/></div>
 				<div className="clickableDiv" onClick={() => handleWindow("mario", "Mario Bros")}><Icon iconIMG={ marioIcon } title="Super Mario Bros"/></div>
-				<a href="http://stw-uvg-22.site:4025" target="_blank" rel="noreferrer"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
-				<a href="http://stw-uvg-22.site:3521" target="_blank" rel="noreferrer"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
+				<a href="https://github.com/andresdlRoca/WebReactBased-Calculator-UVG" target="_blank" rel="noreferrer"><Icon iconIMG={ calcIcon } title="Calculator" /></a>
+				<a href="https://github.com/andresdlRoca/lab8_Sistema_Web-UVG" target="_blank" rel="noreferrer"><Icon iconIMG={ pokeIcon } title="PokeCards" /></a>
 
 			</div>
 			{activeWindows?.map((item, i) => (
